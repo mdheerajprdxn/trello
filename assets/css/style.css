@@ -143,7 +143,7 @@ li {
   display: flex;
 }
 
-ul {
+.task-list {
   padding: 10px;
   background-color: #ccc;
   margin: 10px;
@@ -159,7 +159,6 @@ ul {
 li {
   margin: 10px 0;
   padding: 0.5rem;
-  display: block;
   border: 1px solid #000;
 }
 
