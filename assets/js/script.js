@@ -10,7 +10,7 @@ addtasks.forEach((addTask) => {
   addTask.addEventListener("submit", (e) => {
     e.preventDefault();
     let task = e.target.querySelector("input").value;
-    console.log(task);
+    let taskList = e.target.console.log(task);
   });
 });
 
