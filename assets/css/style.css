@@ -156,7 +156,7 @@ body {
           align-items: flex-start;
 }
 
-.task-list {
+.card-container {
   padding: 10px 7px;
   margin: 7px 5px;
   border-radius: 5px;
@@ -167,10 +167,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
   background-color: #DFE3E7;
 }
 
-.task-list h2 {
+.card-container h2 {
   padding: 0 5px;
   margin-bottom: 10px;
   color: #163D50;
@@ -178,38 +180,48 @@ body {
   font-size: 16px;
 }
 
-.task-list > li {
+.card-container .card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.card-container .card-list > li {
   margin: 3px 0;
   padding: 0.5rem;
   border-radius: 5px;
   border-bottom: 2px solid #ccc;
 }
 
-.task-list > li h3 {
+.card-container .card-list > li h3 {
   margin: 10px 0;
 }
 
-.task-list > li .task-info li {
+.card-container .card-list > li .task-info li {
   font-size: 14px;
   color: #777;
   margin-right: 5px;
 }
 
-.task-list > li .task-info .time, .task-list > li .task-info .due-date {
+.card-container .card-list > li .task-info .time, .card-container .card-list > li .task-info .due-date {
   font-family: "FontAwesome";
 }
 
-.task-list > li .task-info .due-date::before {
+.card-container .card-list > li .task-info .due-date::before {
   content: "\f017";
   margin: 0 5px;
 }
 
-.task-list > li .task-info .time::before {
+.card-container .card-list > li .task-info .time::before {
   content: "\f133";
   margin: 0 5px;
 }
 
-.task {
+.card {
   background-color: #fff;
 }
 
