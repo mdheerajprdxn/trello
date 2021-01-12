@@ -198,7 +198,7 @@ body {
 }
 
 .card-container .card-list > li h3 {
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .card-container .card-list > li .task-info li {
