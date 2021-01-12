@@ -156,6 +156,19 @@ body {
           align-items: flex-start;
 }
 
+#add-new-list {
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+#add-new-list:hover {
+  background-color: #fff;
+}
+
 .card-container {
   padding: 10px 7px;
   margin: 7px 5px;
@@ -178,6 +191,7 @@ body {
   color: #163D50;
   font-weight: 600;
   font-size: 16px;
+  text-transform: capitalize;
 }
 
 .card-container .card-list {
