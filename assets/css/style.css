@@ -151,6 +151,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .task-list {
@@ -169,16 +172,41 @@ body {
 
 .task-list h2 {
   padding: 0 5px;
+  margin-bottom: 10px;
   color: #163D50;
   font-weight: 600;
   font-size: 16px;
 }
 
-li {
-  margin: 10px 0;
+.task-list > li {
+  margin: 3px 0;
   padding: 0.5rem;
   border-radius: 5px;
   border-bottom: 2px solid #ccc;
+}
+
+.task-list > li h3 {
+  margin: 10px 0;
+}
+
+.task-list > li .task-info li {
+  font-size: 14px;
+  color: #777;
+  margin-right: 5px;
+}
+
+.task-list > li .task-info .time, .task-list > li .task-info .due-date {
+  font-family: "FontAwesome";
+}
+
+.task-list > li .task-info .due-date::before {
+  content: "\f017";
+  margin: 0 5px;
+}
+
+.task-list > li .task-info .time::before {
+  content: "\f133";
+  margin: 0 5px;
 }
 
 .task {
@@ -186,6 +214,7 @@ li {
 }
 
 .add-task {
+  margin-top: 10px;
   background-color: transparent;
   border: none;
 }
